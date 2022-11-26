@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="533.0" prefWidth="727.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kotprog.game.ControllerHero">
+    <children>
+        <Label layoutX="576.0" layoutY="19.0" prefHeight="30.0" prefWidth="58.0" text="Arany:">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblGold" alignment="BOTTOM_LEFT" layoutX="640.0" layoutY="21.0" prefHeight="27.0" prefWidth="80.0">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+      <Label layoutX="14.0" layoutY="88.0" prefHeight="20.0" prefWidth="60.0" text="Támadás" />
+      <Label layoutX="14.0" layoutY="118.0" prefHeight="20.0" prefWidth="60.0" text="Védekezés" />
+      <Label layoutX="14.0" layoutY="148.0" prefHeight="20.0" prefWidth="60.0" text="Varázserő" />
+      <Label layoutX="14.0" layoutY="178.0" prefHeight="20.0" prefWidth="60.0" text="Tudás" />
+      <Label layoutX="14.0" layoutY="238.0" prefHeight="20.0" prefWidth="60.0" text="Szerencse" />
+      <Label layoutX="14.0" layoutY="208.0" prefHeight="20.0" prefWidth="60.0" text="Morál" />
+      <Label fx:id="lblDefence" layoutX="119.0" layoutY="118.0" prefHeight="18.0" prefWidth="31.0" />
+      <Label fx:id="lblAttack" layoutX="119.0" layoutY="88.0" prefHeight="18.0" prefWidth="31.0" />
+      <Label fx:id="lblSpellpower" layoutX="119.0" layoutY="148.0" prefHeight="18.0" prefWidth="31.0" />
+      <Label fx:id="lblMorale" layoutX="119.0" layoutY="208.0" prefHeight="18.0" prefWidth="31.0" />
+      <Label fx:id="lblKnowledge" layoutX="119.0" layoutY="178.0" prefHeight="18.0" prefWidth="31.0" />
+      <Label fx:id="lblLuck" layoutX="119.0" layoutY="238.0" prefHeight="18.0" prefWidth="31.0" />
+      <Button layoutX="194.0" layoutY="88.0" mnemonicParsing="false" onAction="#plusAttack" text="Növelés" />
+      <Button layoutX="194.0" layoutY="118.0" mnemonicParsing="false" onAction="#plusDefence" text="Növelés" />
+      <Button layoutX="194.0" layoutY="148.0" mnemonicParsing="false" onAction="#plusSpellpower" text="Növelés" />
+      <Button layoutX="194.0" layoutY="178.0" mnemonicParsing="false" onAction="#plusKnowledge" text="Növelés" />
+      <Button layoutX="194.0" layoutY="208.0" mnemonicParsing="false" onAction="#plusMorale" text="Növelés" />
+      <Button layoutX="194.0" layoutY="238.0" mnemonicParsing="false" onAction="#plusLuck" text="Növelés" />
+      <Label layoutX="284.0" layoutY="92.0" text="Tulajdonságpontok:" />
+      <Label fx:id="lblVirtue" alignment="CENTER_RIGHT" layoutX="411.0" layoutY="92.0" prefHeight="18.0" prefWidth="14.0" />
+      <Button layoutX="459.0" layoutY="101.0" mnemonicParsing="false" onAction="#buyVirtue" text="Vásárlás" />
+      <Label layoutX="284.0" layoutY="122.0" text="Tulajdonságpont ára:" textFill="RED" />
+      <Label fx:id="lblVrtCost" layoutX="418.0" layoutY="122.0" textFill="RED" />
+      <Label layoutX="14.0" layoutY="19.0" text="Hős tulajdonságai:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="290.0" text="Varázslatok:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="326.0" text="Név">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="150.0" layoutY="326.0" text="Ár" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="220.0" layoutY="326.0" text="Manna">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSplOneName" layoutX="14.0" layoutY="363.0" />
+      <Label fx:id="lblSplThreeName" layoutX="14.0" layoutY="423.0" />
+      <Label fx:id="lblSplOneCost" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="150.0" layoutY="363.0" prefHeight="18.0" prefWidth="20.0" textFill="RED" />
+      <Label fx:id="lblSplTwoCost" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="150.0" layoutY="393.0" textFill="RED" />
+      <Label fx:id="lblSplThreeCost" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="150.0" layoutY="423.0" textFill="RED" />
+      <Label fx:id="lblSplOneMana" alignment="CENTER" layoutX="220.0" layoutY="363.0" prefHeight="18.0" prefWidth="43.0" />
+      <Label fx:id="lblSplTwoMana" alignment="CENTER" layoutX="220.0" layoutY="393.0" prefHeight="18.0" prefWidth="43.0" />
+      <Label fx:id="lblSplThreeMana" alignment="CENTER" layoutX="220.0" layoutY="423.0" prefHeight="18.0" prefWidth="43.0" />
+      <Button fx:id="btnSpellOne" layoutX="311.0" layoutY="359.0" mnemonicParsing="false" onAction="#buySpell1" text="Vásárlás" />
+      <Button fx:id="btnSpellTwo" layoutX="311.0" layoutY="389.0" mnemonicParsing="false" onAction="#buySpell2" text="Vásárlás" />
+      <Button fx:id="btnSpellThree" layoutX="311.0" layoutY="419.0" mnemonicParsing="false" onAction="#buySpell3" text="Vásárlás" />
+      <Button layoutX="275.0" layoutY="493.0" mnemonicParsing="false" onAction="#toUnitShop" text="Tovább az egység vásárláshoz" />
+      <Label layoutX="14.0" layoutY="53.0" text="Név">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="97.0" layoutY="53.0" prefHeight="20.0" prefWidth="43.0" text="Pont">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSplTwoName" layoutX="14.0" layoutY="393.0" />
+    </children>
+</AnchorPane>

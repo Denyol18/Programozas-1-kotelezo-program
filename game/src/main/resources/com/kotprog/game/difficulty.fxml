@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="533.0" prefWidth="727.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kotprog.game.ControllerDiff">
+   <children>
+      <Button layoutX="329.0" layoutY="283.0" mnemonicParsing="false" onAction="#medium" prefHeight="30.0" prefWidth="70.0" text="Közepes" />
+      <Button layoutX="329.0" layoutY="226.0" mnemonicParsing="false" onAction="#easy" prefHeight="30.0" prefWidth="70.0" text="Könnyű" />
+      <Button layoutX="329.0" layoutY="341.0" mnemonicParsing="false" onAction="#hard" prefHeight="30.0" prefWidth="70.0" text="Nehéz" />
+      <Label fx:id="lblGold" layoutX="512.0" layoutY="15.0" prefHeight="27.0" prefWidth="77.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="250.0" layoutY="162.0" text="Válassz nehézségi fokozatot!" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
