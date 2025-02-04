@@ -2,4 +2,4 @@
 
 Játék: Heroes of Might and Magic
 
-Félkész álapotú.
+Félkész állapotú.
